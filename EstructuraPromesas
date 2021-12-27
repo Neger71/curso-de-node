@@ -1,0 +1,14 @@
+const crearArchivo = async (base = 5) => {
+    try {
+        ...
+        //Retorna algo que se recupera cuando se invoca
+        return `Tabla del ${base}.txt`; 
+        } catch (err) {
+        throw err;
+    }
+//Cuando se invoca..
+console.clear();
+const base = 8;
+crearArchivo(base)
+.then(  nombrearchivo => console.log('Archivo', nombrearchivo, 'creado'))
+.catch(err => console.log(err));    
